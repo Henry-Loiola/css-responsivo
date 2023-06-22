@@ -1,0 +1,111 @@
+.produtos-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.produtos-section h2 {
+    color: #FF8C00;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FF8C00;
+    padding-bottom: 5px;
+}
+
+.container-produto{    
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;  
+}
+
+.produtos-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.produto-card{
+    display: flex;
+    justify-content:space-between ;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.produto-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.produto-card h3 {
+    color: #FF8C00;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.produto-card p {
+    margin-bottom: 20px;
+}
+
+.adicionar-carrinho {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.adicionar-carrinho:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+    .produtos-lista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-produto {
+        max-width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto-card {
+        text-align: center;
+        align-items: center;
+    }
+
+    .produto-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .container-produto {
+        max-width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produtos-lista {
+        grid-template-columns: 1fr;
+    }
+    
+    .produto-card {
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .produto-card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
